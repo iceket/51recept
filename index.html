@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Вкусно дома — 51 любимое блюдо</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='8' y1='8' x2='40' y2='40' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%238ef4ff'/%3E%3Cstop offset='.5' stop-color='%2335d8ff'/%3E%3Cstop offset='1' stop-color='%230a86d8'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='40' y1='10' x2='10' y2='40' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23a6f7ff'/%3E%3Cstop offset='1' stop-color='%230f9ae0' stop-opacity='.6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='48' height='48' rx='11' fill='%23070b14'/%3E%3Cg transform='rotate%28-32 24 24%29'%3E%3Cellipse cx='24' cy='24' rx='18.5' ry='9.6' fill='none' stroke='url%28%23b%29' stroke-width='3.4' stroke-linecap='round' stroke-dasharray='58 30' stroke-dashoffset='14'/%3E%3Ccircle cx='41.4' cy='20.6' r='3.4' fill='%23bff6ff'/%3E%3C/g%3E%3Ccircle cx='24' cy='24' r='7' fill='url%28%23a%29'/%3E%3Ccircle cx='24' cy='24' r='2.8' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stars" id="stA"></div><div class="stars" id="stB"></div>
+
+<nav class="nav">
+  <a class="brand" href="#"><svg viewBox="0 0 48 48"><defs><linearGradient id="sw" x1="8" y1="8" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#8ef4ff"/><stop offset=".5" stop-color="#35d8ff"/><stop offset="1" stop-color="#0a86d8"/></linearGradient><linearGradient id="sw2" x1="40" y1="10" x2="10" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#a6f7ff"/><stop offset="1" stop-color="#0f9ae0" stop-opacity=".25"/></linearGradient></defs><g transform="rotate(-32 24 24)"><ellipse cx="24" cy="24" rx="18.5" ry="9.6" fill="none" stroke="url(#sw2)" stroke-width="3.1" stroke-linecap="round" stroke-dasharray="58 30" stroke-dashoffset="14"/><circle cx="41.4" cy="20.6" r="3.1" fill="#bff6ff"/></g><circle cx="24" cy="24" r="6.6" fill="url(#sw)"/><circle cx="24" cy="24" r="2.6" fill="#fff"/></svg><span class="wm"><small>ДОМА</small><b>ВКУСНО</b></span></a>
+  <div class="links"><a href="#recipes">Рецепты</a><a href="#recipes">Супы</a><a href="#recipes">Паста</a><a href="#recipes">Десерты</a></div>
+  <a class="btn" href="#recipes"><span>Все рецепты</span></a>
+</nav>
+
+<header>
+  <div class="badge"><i><svg width="14" height="16" viewBox="5 1 14 22" preserveAspectRatio="none"><path d="M13.9 1.6 5.5 13.6a.7.7 0 0 0 .6 1.1h4.2l-1 7.7a.7.7 0 0 0 1.25.55l8.3-12.1a.7.7 0 0 0-.6-1.1h-4.2l1-7.7a.7.7 0 0 0-1.25-.55Z" fill="rgba(16,112,152,.72)" stroke="rgba(190,236,255,.6)" stroke-width="1.6" stroke-linejoin="round"/></svg></i>51 блюдо · пошаговые рецепты</div>
+  <h1>Готовьте как шеф<br>у себя дома</h1>
+  <p class="sub"><b>Супы, паста, мясо, рыба, десерты</b> — понятные ингредиенты, шаги и советы для каждого блюда.</p>
+  <a class="btn cta" href="#recipes"><span>Смотреть рецепты</span></a>
+  <div class="ringwrap"><div class="ring" id="ring"></div></div>
+</header>
+
+<main class="wrap" id="recipes">
+  <div class="sec">
+    <h2>Выберите блюдо</h2>
+    <div class="tools">
+      <input id="q" type="search" placeholder="Найти блюдо или ингредиент…" aria-label="Поиск">
+      <div class="chips" id="cats"></div>
+      <div class="chips" id="diffs"></div>
+      <div class="count" id="count"></div>
+    </div>
+  </div>
+  <div class="grid" id="grid"></div>
+</main>
+
+<footer>Приятного аппетита! Время указано примерно и зависит от плиты и опыта.</footer>
+<dialog id="dlg"><div class="in" id="det"></div></dialog>
+
+<script src="recipes.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
